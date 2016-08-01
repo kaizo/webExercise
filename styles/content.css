@@ -1,0 +1,90 @@
+.mainContent {
+    background-color: #f9f9f9;
+    padding-left: 109px;
+    padding-right: 103px;
+}
+
+.sectionTitle {
+    font-size: 30px;
+    color: #515050;
+    margin-bottom: 40px;
+    padding-top: 99px;
+}
+
+.dataBlock {
+    height: 275px;
+    width: 252px;
+    float: left;
+    box-shadow: 2px 3px 0px 0px #e0e0e0;
+    margin-right: 46px;
+}
+
+.dataBlock .header {
+    font-family: "LabGrotesqueWeb-medium";
+    background-color: #e8e8e8;
+    color: #474646;
+    border-bottom: solid 1px #eee;
+    height: 34px;
+    padding-top: 9px;
+    padding-left: 26px;
+    font-size: 19px;
+}
+
+.dataBlock .content {
+    background-color: #fff;
+    height: calc(100% - 43px);
+    text-align: center;
+}
+
+.contentMain1 {
+    font-size: 33px;
+    padding-top: 35px;
+}
+
+.contentMain2 {
+    padding-top: 35px;
+    font-size: 25px;
+}
+
+.contentSub {
+    font-size: 17px;
+    color: #38a0ca;
+}
+
+.controlsContainer {
+    margin-bottom: 40px;
+}
+
+.controlsContainer button, .buttonLike {
+    background-color: #00b1ea;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.controlsContainer button {
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px 0px #5396b4;
+    /*border-bottom: solid 3px #5396b4;*/
+    /*border-right: solid 3px #5396b4;*/
+    /*border-top: solid 1px #45c5ee;*/
+    /*border-left: solid 1px #9fdff3;*/
+}
+
+.buttonLike {
+    display:block;
+    float: right;
+}
+
+.controlsContainer input[type="radio"] {
+    display:none;
+}
+
+.controlsContainer input[type="radio"]:checked+label {
+    background-color: #38a2cc;
+    color: #cddae1;
+}

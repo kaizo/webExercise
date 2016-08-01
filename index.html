@@ -1,0 +1,178 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/content.css">
+</head>
+<body>
+    <div class="mainHeader">
+        <img src="images/bw7_logo_white.png" id="logo" class="headerItem">
+        <div class="headerMenu">
+           <span class="menuButton headerItem">Predict</span>
+           <span class="menuButton active headerItem">Manage</span>
+           <span class="menuButton headerItem">Evaluate</span>
+        </div>
+
+        <div class="clientMenu">
+            <div class="clientName">Client name</div>
+            <div class="settings">Account settings</div>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <div class="dataBlockContainer">
+            <div class="sectionTitle"> KPI status</div>
+
+            <div class="dataBlock">
+                <div class="header">Raise sales</div>
+                <div class="content">
+                    <div class="contentMain1">2.750.000</div>
+                    <div class="contentSub">Media generated sales</div>
+                    <div class="contentMain2">1.500.000</div>
+                    <div class="contentSub">Spend</div>
+                </div>
+            </div>
+
+            <div class="dataBlock">
+                <div class="header">Gain new subscribers</div>
+                <div class="content">
+                    <div class="contentMain1">220.000</div>
+                    <div class="contentSub">Media generated subscribers</div>
+                    <div class="contentMain2">70.000</div>
+                    <div class="contentSub">Spend</div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="listContainer">
+            <div class="sectionTitle">Campaigns</div>
+            <div class="controlsContainer">
+                <button>Create new</button>
+                <input type="radio" name="mode" value="timeline" id="timelineRadio" checked="checked">
+                <label class="buttonLike last" for="timelineRadio">Timeline</label>
+                <input type="radio" name="mode" value="list" id="listRadio">
+                <label class="buttonLike first" for="listRadio">List</label>
+            </div>
+            <table class="listTable">
+                <thead>
+                    <tr>
+                        <td>Campaign name</td>
+                        <td>Status</td>
+                        <td>Marketing goal</td>
+                        <td>Tags</td>
+                        <td>Date</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Campaign 27</td>
+                        <td><span class="statusMarker prediction"></span> Prediction</td>
+                        <td>Raise awareness</td>
+                        <td>Brand: BW7</td>
+                        <td>01/06/16-31/08/16</td>
+                    </tr>
+                    <tr>
+                        <td>Campaign 3</td>
+                        <td><span class="statusMarker prediction"></span> Prediction</td>
+                        <td>Gain new subscribers</td>
+                        <td>Product: Newsletter</td>
+                        <td>01/02/16-31/02/16</td>
+                    </tr>
+                    <tr>
+                        <td>Campaign 9</td>
+                        <td><span class="statusMarker prediction"></span> Prediction</td>
+                        <td>Gain new subscribers</td>
+                        <td>Product: Newsletter</td>
+                        <td>15/01/16-31/03/16</td>
+                    </tr>
+                    <tr>
+                        <td>Campaign 22</td>
+                        <td><span class="statusMarker running"></span> Running</td>
+                        <td>Raise awareness</td>
+                        <td>Brand: BW7; Product: RTPM</td>
+                        <td>01/01/16-31/01/16</td>
+                    </tr>
+                    <tr>
+                        <td>Campaign 4</td>
+                        <td><span class="statusMarker running"></span> Running</td>
+                        <td>Raise sales</td>
+                        <td>Product: RTPM</td>
+                        <td>15/12/16-15/01/17</td>
+                    </tr>
+                    <tr>
+                        <td>Campaign 2</td>
+                        <td><span class="statusMarker finished"></span> Finished</td>
+                        <td>Raise awareness</td>
+                        <td>Product: RTPM</td>
+                        <td>01/12/16-31/12/16</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="mediaFiltered">
+            <div class="sectionTitle">Creative materials</div>
+            <div class="controlsContainer">
+                <button>Upload new</button>
+            </div>
+            <div class="filterContainer">
+                <input type="checkbox" id="filterAll"> <label for="filterAll">All</label>
+                <input type="checkbox" id="filterTV"> <label for="filterTV">TV</label>
+                <input type="checkbox" id="filterRadio"> <label for="filterRadio">Radio</label>
+                <input type="checkbox" id="filterPrint"> <label for="filterPrint">Print</label>
+                <input type="checkbox" id="filterOutdoor"> <label for="filterOutdoor">Outdoor</label>
+                <input type="checkbox" id="filterOnline"> <label for="filterOnline">Online</label>
+            </div>
+            <div class="mediaBlockContainer">
+                <div class="imageBlock">
+                    <div class="image"><img src="images/Material%201.PNG"></div>
+                    <div class="mediaTitle">The truth</div>
+                    <div class="mediaTag">Print</div>
+                </div>
+                <div class="imageBlock">
+                    <div class="image"><img src="images/Material%202.png"></div>
+                    <div class="mediaTitle">The truth</div>
+                    <div class="mediaTag">Print</div>
+                </div>
+                <div class="imageBlock">
+                    <div class="image"><img src="images/Material%203.png"></div>
+                    <div class="mediaTitle">The truth</div>
+                    <div class="mediaTag">Print</div>
+                </div>
+                <div class="imageBlock">
+                    <div class="image"><img src="images/Material%204.png"></div>
+                    <div class="mediaTitle">The truth</div>
+                    <div class="mediaTag">Print</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <table>
+            <tr>
+                <td>
+                    <span clas="company">
+                        © 2016 Blackwood Seven A/S
+                    </span>
+                </td>
+                <td>
+                    <a class="feedback">Feedback</a>
+                </td>
+                <td>
+                    <span class="socialIcons">
+                        <img src="images/facebook.png">
+                        <img src="images/twitter.png">
+                        <img src="images/linkedin.png">
+                    </span>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+</body>
+</html>

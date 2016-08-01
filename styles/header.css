@@ -1,0 +1,55 @@
+.mainHeader {
+    background-color: #292929;
+    color: white;
+    height: 100px;
+    position: relative;
+    border-bottom: solid 1px #c3c3c3;
+}
+
+#logo {
+    height: 64px;
+    padding: 18px;
+}
+
+.headerMenu, #logo {
+    float: left;
+}
+
+.menuButton {
+    cursor: default;
+    width: 220px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    padding: 32px 0;
+}
+
+.menuButton.active {
+    background-color: #1a1b1d;
+}
+
+.clientMenu {
+    float: right;
+}
+
+.headerItem {
+    border-right: solid 2px #252525;
+}
+
+.clientMenu {
+    margin-right: 125px;
+    margin-top: 23px;
+    text-align: center;
+}
+
+.clientName {
+    font-size: 25px;
+}
+
+.settings {
+    color: #38a0ca;
+    font-family: "LabGrotesqueWeb-medium";
+    font-size: 19px;
+}

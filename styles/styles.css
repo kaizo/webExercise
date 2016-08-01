@@ -1,0 +1,21 @@
+@font-face {
+    font-family: LabGrotesqueWeb;
+    src: url(fonts/LabGrotesqueWeb-Regular.woff);
+}
+
+@font-face {
+    font-family: LabGrotesqueWeb-medium;
+    src: url(fonts/LabGrotesqueWeb-Medium.woff);
+}
+
+
+
+body {
+    font-family: "LabGrotesqueWeb";
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
