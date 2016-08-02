@@ -1,0 +1,35 @@
+.footer {
+    height: 96px;
+    margin-top: 130px;
+    background-color: #292929;
+    padding-left: 109px;
+    padding-right: 103px;
+}
+
+.footer table {
+    width: 100%;
+    font-size: 25px;
+    height: 96px;
+}
+
+.footer table td{
+    width: 33%;
+}
+
+.socialIcons img {
+    width: 45px;
+}
+
+.socialIcons {
+    text-align: right;
+}
+
+.feedback {
+    text-align: center;
+    color: #38a0ca;
+}
+
+.company {
+    color: white;
+}
+

@@ -1,5 +1,4 @@
 .mainContent {
-    background-color: #f9f9f9;
     padding-left: 109px;
     padding-right: 103px;
 }
@@ -227,7 +226,7 @@ input[type=checkbox] {
     font-size: 19px;
     text-align: center;
     box-shadow: 2px 3px 0px 0px #e0e0e0;
-    margin-left: 45px;
+    margin-right: 45px;
     margin-bottom: 45px;
     color: #4c4c4c;
 }
