@@ -1,13 +1,29 @@
 @font-face {
     font-family: LabGrotesqueWeb;
-    src: url(fonts/LabGrotesqueWeb-Regular.woff);
+    src: url('fonts/LabGrotesqueWeb-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LabGrotesqueWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/LabGrotesqueWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: LabGrotesqueWeb-medium;
-    src: url(fonts/LabGrotesqueWeb-Medium.woff);
+    src: url('fonts/LabGrotesqueWeb-Medium.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LabGrotesqueWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/LabGrotesqueWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+@font-face {
+    font-family: LabGrotesqueWeb-bold;
+    src: url('fonts/LabGrotesqueWeb-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/LabGrotesqueWeb-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/LabGrotesqueWeb-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('fonts/LabGrotesqueWeb-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
 
 
 body {

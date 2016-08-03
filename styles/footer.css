@@ -13,11 +13,12 @@
 }
 
 .footer table td{
-    width: 33%;
+    /*width: 33%;*/
 }
 
 .socialIcons img {
     width: 45px;
+    cursor: pointer;
 }
 
 .socialIcons {
@@ -25,11 +26,14 @@
 }
 
 .feedback {
-    text-align: center;
+    text-align: left;
     color: #38a0ca;
+    font-family: "LabGrotesqueWeb-bold";
+    cursor: pointer;
 }
 
 .company {
     color: white;
+    font-size: 20px;
 }
 
