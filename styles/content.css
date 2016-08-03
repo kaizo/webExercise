@@ -112,7 +112,8 @@
     color: #4c4c4c;
     font-family: "LabGrotesqueWeb-medium";
     border: none;
-    border-collapse: collapse;
+    border-spacing: 0px;
+    border-collapse: separate;
     box-shadow: 2px 2px 0px 0px #e0e0e0;
 }
 
