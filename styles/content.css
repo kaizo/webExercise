@@ -55,7 +55,8 @@
 }
 
 .controlsContainer button, .buttonLike {
-    background-color: #00b1ea;
+    font-family: "LabGrotesqueWeb-bold";
+    background-color: rgb(0, 176, 235);
     border: none;
     color: white;
     padding: 10px 0;
@@ -67,7 +68,7 @@
 
 .controlsContainer button {
     border-radius: 3px;
-    box-shadow: 1px 1px 1px 1px #5396b4;
+    box-shadow: 1px 1px 1px 1px rgb(101,144, 176);
     width: 226px;
     text-transform: uppercase;
 }
@@ -76,17 +77,17 @@
     display:block;
     float: right;
     width: 104px;
-    background: linear-gradient(#4cafd9, #058ec4);
+    background: linear-gradient(rgb(120, 176, 217), rgb(066, 149, 208));
 }
 
 .buttonLike.first {
     border-radius: 3px 0 0 3px;
-    box-shadow: 0px 1px 1px 1px #5396b4;
+    box-shadow: 0px 1px 1px 1px rgb(081, 133, 172);
 }
 
 .buttonLike.last {
     border-radius: 0 3px 3px 0;
-    box-shadow: 1px 1px 1px 1px #5396b4;
+    box-shadow: 1px 1px 1px 1px rgb(081, 133, 172);
 }
 
 .controlsContainer input[type="radio"] {
@@ -94,16 +95,16 @@
 }
 
 .controlsContainer input[type="radio"]:checked+label {
-    background: #38a2cc;
-    color: #cddae1;
+    background: rgb(104, 162, 204);
+    color: rgb(195, 210, 222);
 }
 
 .controlsContainer input[type="radio"]:checked+label.first {
-    box-shadow: 0px 1px 1px 1px #5396b4, inset 5px 5px 49px -27px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 1px 1px rgb(081, 133, 172), inset 5px 5px 49px -27px rgba(0,0,0,0.75);
 }
 
 .controlsContainer input[type="radio"]:checked+label.last {
-    box-shadow: 1px 1px 1px 1px #5396b4, inset 5px 5px 49px -27px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 1px 1px rgb(081, 133, 172), inset 5px 5px 49px -27px rgba(0,0,0,0.75)
 }
 
 .listTable {
@@ -201,53 +202,38 @@
     display: inline-block;
 }
 
-/*.filterContainer label{*/
-    /*padding-left: 8px;*/
-/*}*/
-
-/*.multiFilterContainer input +{*/
-    /*margin-left: 23px;*/
-/*}*/
-
-/*input[type=checkbox] {*/
-    /* Double-sized Checkboxes */
-    /*-ms-transform: scale(2); /!* IE *!/*/
-    /*-moz-transform: scale(2); /!* FF *!/*/
-    /*-webkit-transform: scale(2); /!* Safari and Chrome *!/*/
-    /*-o-transform: scale(2); /!* Opera *!/*/
-    /*padding: 10px;*/
-/*}*/
-
-.regular-checkbox {
-    display: none;
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 32px;
 }
 
-.regular-checkbox + label {
-    position: relative;
-    padding-left: 32px;
-}
-
-.multiFilterContainer .regular-checkbox + label {
+.multiFilterContainer [type="checkbox"] + label {
     margin-left: 21px;
 }
 
-.regular-checkbox + label:before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0px;
-    background-color: #e0e0e0;
-    border: 1px solid #c4c4c4;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-    border-radius: 3px;
+[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c4c4c4;
+  background: #e0e0e0;
+  border-radius: 3px;
 }
 
-.regular-checkbox:checked + label:before {
+[type="checkbox"]:checked + label:after {
     content: '\2714';
-    text-align: center;
-    line-height: 21px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
     font-size: 21px;
+    line-height: 0.8;
+}
+
+[type="checkbox"] {
+    display: none;
 }
 
 .imageBlock {
@@ -257,7 +243,7 @@
     background-color: white;
     font-size: 19px;
     text-align: center;
-    box-shadow: 2px 3px 0px 0px #e0e0e0;
+    box-shadow: 2px 2px 0px 0px #e0e0e0;
     margin-right: 45px;
     margin-bottom: 45px;
     color: #4c4c4c;
@@ -283,7 +269,7 @@
     border-color: transparent transparent transparent #aaaeb5;
     margin-top: 4px;
     z-index: 99;
-    cursor: pointer;
+    left: 126px;
 }
 
 .imageBlock .image.video:before {
@@ -292,16 +278,19 @@
     width: 54px;
     height: 54px;
     top: 55px;
-    margin-left: 99px;
+    left: 99px;
     background-color: rgba(200,200,200,0.3);
     border: solid 3px #5f5f5f;
     border-radius: 50%;
     z-index: 98;
-    cursor: pointer;
+
 }
 
 .imageBlock .image.landscape img {
     height: 164px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
 }
 
 .imageBlock .image.portrait img {

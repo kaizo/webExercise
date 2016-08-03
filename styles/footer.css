@@ -18,7 +18,7 @@
 
 .socialIcons img {
     width: 45px;
-    cursor: pointer;
+    padding-left: 22px;
 }
 
 .socialIcons {
@@ -29,11 +29,9 @@
     text-align: left;
     color: #38a0ca;
     font-family: "LabGrotesqueWeb-bold";
-    cursor: pointer;
 }
 
 .company {
     color: white;
     font-size: 20px;
 }
-
